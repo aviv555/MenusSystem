@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Operations">
+      <UniqueIdentifier>{28cd0e0c-1351-473a-9f65-8f235e1d8624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Operations\Header Files">
+      <UniqueIdentifier>{85d3f4ca-5441-4006-b2d3-edf13a733ad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Operations\Cpp Files">
+      <UniqueIdentifier>{84a15507-c8b7-4ce6-862d-2ac80169076b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menus">
+      <UniqueIdentifier>{9d0df721-ca86-498d-b50c-fe8ce1db405f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menus\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Menus\Cpp Files">
+      <UniqueIdentifier>{f6f4818a-ee9f-425d-8713-89cc7675b46d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{492b9f90-2669-4af7-a03e-8675afe44ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{7a45e14f-a2b1-4252-bcff-1fcab9ee42cb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Operation1.cpp">
+      <Filter>Operations\Cpp Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Operation2.cpp">
+      <Filter>Operations\Cpp Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Operation3.cpp">
+      <Filter>Operations\Cpp Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Operation4.cpp">
+      <Filter>Operations\Cpp Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MainMenu.cpp">
+      <Filter>Menus\Cpp Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MenuItem.cpp">
+      <Filter>Menus\Cpp Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\SubMenu.cpp">
+      <Filter>Menus\Cpp Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\InputUtilityFunctions.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\MainMenu.h">
+      <Filter>Menus\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\MenuItem.h">
+      <Filter>Menus\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\SubMenu.h">
+      <Filter>Menus\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Operation1.h">
+      <Filter>Operations\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Operation2.h">
+      <Filter>Operations\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Operation3.h">
+      <Filter>Operations\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Operation4.h">
+      <Filter>Operations\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ExecutableInterface.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\InputUtilityFunctions.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
