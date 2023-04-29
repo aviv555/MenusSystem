@@ -15,8 +15,3 @@ void MenuItem::SetName(const std::string& name)
 {
 	this->name = name;
 }
-
-//bool MenuItem::Execute() const
-//{
-//	return true;
-//}

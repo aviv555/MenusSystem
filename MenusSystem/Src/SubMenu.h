@@ -2,11 +2,11 @@
 #include <vector>
 #include "MenuItem.h"
 
-class SubMenu : MenuItem
+class SubMenu : public MenuItem
 {
 	// Members
 private:
-	std::vector<MenuItem*> m_MenuItemList;
+	std::vector<std::shared_ptr<MenuItem>> m_MenuItemList;
 	
 public:
 	// Constructor
@@ -15,7 +15,7 @@ public:
 	// Methods
 	void Show() const;
 	void GetUserInput(int& userInputAsInteger) const;
-	void AddSubItem(MenuItem* Item);
+	void AddSubItem(const MenuItem& Item);
 	bool Execute() const override;
 };
 

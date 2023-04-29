@@ -46,9 +46,9 @@ void SubMenu::GetUserInput(int& userInputAsInteger) const
     }
 }
 
-void SubMenu::AddSubItem(MenuItem* item)
+void SubMenu::AddSubItem(const MenuItem& item)
 {
-	this->m_MenuItemList.push_back(item);
+	this->m_MenuItemList.push_back(std::make_shared<MenuItem>(item));
 }
 
 bool SubMenu::Execute() const 
