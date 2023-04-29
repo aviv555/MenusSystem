@@ -5,6 +5,6 @@ class Operation2 : public MenuItem
 {
 public:
 	Operation2(std::string name);
-	bool Execute() override;
+	bool Execute() const override;
 };
 

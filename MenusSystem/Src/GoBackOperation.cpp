@@ -2,7 +2,7 @@
 
 GoBackOperation::GoBackOperation(std::string name) : MenuItem(name) {}
 
-bool GoBackOperation::Execute() 
+bool GoBackOperation::Execute() const
 {
 	return false;
 }

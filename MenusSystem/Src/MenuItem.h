@@ -8,7 +8,6 @@ class MenuItem : public ExecutableInterface
     // Members
 private:
     std::string name;
-    bool isRunning = false;
 
 public:
     // Constructor
@@ -17,6 +16,6 @@ public:
     // Methods
     std::string GetName() const;
     void SetName(const std::string& name);
-    bool Execute() override;
+    //bool Execute() const override;
 };
 

@@ -4,7 +4,7 @@ bool InputUtilityFunctions::isInputNumber(const std::string& input)
 {
 	std::string::const_iterator it = input.begin();
 	while (it != input.end() && std::isdigit(*it)) it++;
-	return !input.empty() && it == input.end();
+	return (!input.empty()) && (it == input.end());
 }
 
 bool InputUtilityFunctions::isNumberInRange(const int number, const int lowerBound, const int upperBound)

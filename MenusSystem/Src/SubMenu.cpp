@@ -2,19 +2,9 @@
 #include "InputUtilityFunctions.h"
 #include <string>
 
-SubMenu::SubMenu(std::string name) : MenuItem(name), isRunning(false) {}
+SubMenu::SubMenu(std::string name) : MenuItem(name) {}
 
-bool SubMenu::GetIsRunning()
-{
-    return this->isRunning;
-}
-
-void SubMenu::SetIsRunning(bool isRunning)
-{
-    this->isRunning = isRunning;
-}
-
-void SubMenu::Show()
+void SubMenu::Show() const 
 {
     system("CLS");
     std::cout << "** " << this->GetName() << " **" << std::endl;
@@ -29,7 +19,7 @@ void SubMenu::Show()
     std::cout << "Enter your request ";
 }
 
-void SubMenu::GetUserInput(int& userInputAsInteger)
+void SubMenu::GetUserInput(int& userInputAsInteger) const 
 {
     while (true)
     {
@@ -61,10 +51,9 @@ void SubMenu::AddSubItem(MenuItem* item)
 	this->m_MenuItemList.push_back(item);
 }
 
-bool SubMenu::Execute()
+bool SubMenu::Execute() const 
 {   
-    this->isRunning = true;
-
+    bool isRunning = true;
     while (isRunning)
     {
         Show();

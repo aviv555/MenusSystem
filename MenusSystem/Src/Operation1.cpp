@@ -2,7 +2,7 @@
 
 Operation1::Operation1(std::string name) : MenuItem(name) {}
 
-bool Operation1::Execute()
+bool Operation1::Execute() const
 {
 	system("CLS");
 	std::cout << "Operation 1 executed" << std::endl;

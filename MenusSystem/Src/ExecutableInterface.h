@@ -2,6 +2,6 @@
 class ExecutableInterface
 {
 public:
-	virtual bool Execute() = 0;
+	virtual bool Execute() const = 0;
 };
 
