@@ -147,9 +147,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Src\GoBackOperation.cpp" />
     <ClCompile Include="Src\InputUtilityFunctions.cpp" />
     <ClCompile Include="Src\main.cpp" />
-    <ClCompile Include="Src\MainMenu.cpp" />
     <ClCompile Include="Src\MenuItem.cpp" />
     <ClCompile Include="Src\Operation1.cpp" />
     <ClCompile Include="Src\Operation2.cpp" />
@@ -158,9 +158,9 @@
     <ClCompile Include="Src\SubMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Src\GoBackOperation.h" />
     <ClInclude Include="Src\InputUtilityFunctions.h" />
     <ClInclude Include="Src\ExecutableInterface.h" />
-    <ClInclude Include="Src\MainMenu.h" />
     <ClInclude Include="Src\MenuItem.h" />
     <ClInclude Include="Src\Operation1.h" />
     <ClInclude Include="Src\Operation2.h" />

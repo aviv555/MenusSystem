@@ -1,13 +1,13 @@
 #include "Operation2.h"
 
-Operation2::Operation2(string name) : MenuItem(name) {}
+Operation2::Operation2(std::string name) : MenuItem(name) {}
 
-void Operation2::Execute()  
+bool Operation2::Execute()  
 {
 	system("CLS");
-	cout << "Operation 2 executed" << endl;
-	cout << "Press any key to go back..." << endl;
-	string a;
-	cin >> a;
-	this->GetPredacessor()->Execute();
+	std::cout << "Operation 2 executed" << std::endl;
+	std::cout << "Press any key to go back..." << std::endl;
+	std::string a;
+	std::cin >> a;
+	return true;
 }

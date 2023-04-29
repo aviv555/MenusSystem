@@ -2,24 +2,21 @@
 #include <iostream>
 #include <map>
 #include "ExecutableInterface.h"
-using namespace std;
 
 class MenuItem : public ExecutableInterface
 {
-    // every component on the menu have reference to its predecessor
+    // Members
 private:
-    // why do i need a pointer ? ? ? ask alex!
-    MenuItem* predecessor;
-    string name;
+    std::string name;
+    bool isRunning = false;
 
 public:
-    MenuItem(string name);
+    // Constructor
+    MenuItem(const std::string& name);
 
-    MenuItem* GetPredacessor();
-    void SetPredacessor(MenuItem* predecessor);
-
-    string GetName() const;
-    void SetName(string name);
-    void Execute() override;
+    // Methods
+    std::string GetName() const;
+    void SetName(const std::string& name);
+    bool Execute() override;
 };
 

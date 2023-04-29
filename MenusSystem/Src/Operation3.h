@@ -4,7 +4,7 @@
 class Operation3 : public MenuItem
 {
 public:
-	Operation3(string name);
-	void Execute() override;
+	Operation3(std::string name);
+	bool Execute() override;
 };
 

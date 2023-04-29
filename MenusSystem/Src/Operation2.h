@@ -4,7 +4,7 @@
 class Operation2 : public MenuItem
 {
 public:
-	const Operation2(string name);
-	void Execute() override;
+	Operation2(std::string name);
+	bool Execute() override;
 };
 

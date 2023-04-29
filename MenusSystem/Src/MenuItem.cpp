@@ -1,28 +1,22 @@
 #include "MenuItem.h"
 
-MenuItem::MenuItem(string name)
+MenuItem::MenuItem(const std::string& name)
 {
 	this->name = name;
 }
 
-MenuItem* MenuItem::GetPredacessor() 
-{
-	return this->predecessor;
-}
 
-void MenuItem::SetPredacessor(MenuItem* predecessor)
-{
-	this->predecessor = predecessor;
-}
-
-string MenuItem::GetName() const 
+std::string MenuItem::GetName() const
 {
 	return this->name;
 }
 
-void MenuItem::SetName(string name)
+void MenuItem::SetName(const std::string& name)
 {
 	this->name = name;
 }
 
-void MenuItem::Execute() {}
+bool MenuItem::Execute() 
+{
+	return true;
+}

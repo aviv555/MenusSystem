@@ -1,10 +1,10 @@
 #pragma once
 #include "MenuItem.h"
 
-class Operation4 : public MenuItem
+class GoBackOperation : public MenuItem
 {
 public:
-	Operation4(std::string name);
+	GoBackOperation(std::string name);
 	bool Execute() override;
 };
 
